@@ -1,0 +1,57 @@
+.city-weather {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #f8f9fa;
+  }
+  
+  .current-weather {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .current-weather img {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .temp {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .weather-details {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .forecast {
+    margin-top: 2rem;
+  }
+  
+  .forecast-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .forecast-day {
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .demo-badge {
+    background: #ff9800;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }

@@ -1,0 +1,119 @@
+/* Modern color scheme */
+:root {
+    --primary: #4361ee;
+    --secondary: #3f37c9;
+    --accent: #4895ef;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --success: #4cc9f0;
+    --warning: #f72585;
+  }
+  
+  /* Base styles */
+  .home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .app-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app-header h1 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    color: var(--dark);
+    opacity: 0.8;
+    margin-top: 0.5rem;
+  }
+  
+  /* Card styles */
+  .search-card, .welcome-card, .error-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin: 1rem auto;
+    max-width: 600px;
+    transition: all 0.3s ease;
+  }
+  
+  .search-card:hover, .welcome-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  .welcome-card {
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  .welcome-card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+  }
+  
+  .welcome-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .welcome-card p {
+    color: var(--dark);
+    opacity: 0.7;
+  }
+  
+  .error-card {
+    background: #fff0f3;
+    color: var(--warning);
+    border-left: 4px solid var(--warning);
+  }
+  
+  /* Loading indicator */
+  .loading-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(67, 97, 238, 0.2);
+    border-radius: 50%;
+    border-top-color: var(--primary);
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Footer */
+  .app-footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+  }
+  
+  .data-source {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+  }
